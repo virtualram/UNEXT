@@ -11,6 +11,8 @@ public class Car extends Automobile implements Safety,Pollutioncontrol{
 		super.setMileage(900);
 		this.Wheels = 4;
 		this.setWheels(3);
+		
+		
 	}
 	   @Override
 	   public void getobjectval() {

@@ -1,5 +1,5 @@
 
-public class Automobile {
+public class Automobile extends Gearshift{
 	
 	private Integer powercc;
 	private Integer rpm;
@@ -26,7 +26,7 @@ public class Automobile {
 		this.mileage = mileage;
 		geartype = "Manual";
 		System.out.print("This automobile features" +this.powercc +this.rpm+this.mileage);
-		
+		this.geardown(5);
 	}
 
 	public Integer getPowercc() {
@@ -69,5 +69,13 @@ public class Automobile {
 	public static void setGeartype(String geartype) {
 		Automobile.geartype = geartype;
 	}
+
+
+	@Override
+	public void geardown(Integer g) {
+		// TODO Auto-generated method stub
+		super.gearup(g);
+	}
+	
 	
 }
